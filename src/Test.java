@@ -18,9 +18,20 @@ public class Test {
         }
         return args[0];
     }
+    // Sum numbers up to and including n using recursion
+    public static int summation(int n) {
+        System.out.println(n);
+        if (n == 1)
+            return 1;
+        return summation(n-1) + n;
+    }
 
     public static void main(String[] args){
         System.out.println(findSmallestInt(new int[]{78, 56, -2, 12, 8, -33}));
+        System.out.println(summation(10));
     }
+
+
+
 }
 
